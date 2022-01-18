@@ -1,0 +1,125 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 30px;
+    font-family: "red hat display", sans-serif;
+    font-size: 16px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+.container {
+    border: 2px solid blue;
+    height: 600px;
+    width: 500px;
+    margin: 70px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+ .container:first-child img {
+     width: 100%;
+ }
+.inner-container {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner-container h2 , .inner-container p{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.inner-container p {
+    color: hsl(224, 23%, 65%);
+}
+.order {
+    display: flex;
+    background-color: hsl(224, 23%, 95%);
+    margin: 20px 15px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+ .order div {
+    padding-left: 40px;
+}
+.order a {
+    position: absolute;
+    right: 10px;
+}
+
+.order a:hover {
+    text-decoration: none;
+    opacity: .7;
+}
+
+.order img {
+    border-radius: 150px;
+    max-width: 85px;
+    max-height: 85px;
+    padding-left: 40px;
+}
+
+.payment {
+    border: none;
+    margin: 10px 50px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: var(--Bright-blue);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 5px hsl(245, 75%, 72%);
+}
+
+.payment:hover {
+    background-color: hsl(245, 75%, 62%);
+}
+
+.cancel {
+    border: none;
+    font-size: 18px;
+    color: hsl(224, 23%, 75%);
+    background-color: white;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    color: black;
+}
+
+@media (min-width: 470px){
+    .container {
+        height: 600px;
+        width: 400px;
+    }
+}
