@@ -18,15 +18,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0 30px;
+    margin: 8px;
     font-family: "red hat display", sans-serif;
     font-size: 16px;
-    background: url("./images/pattern-background-mobile.svg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("./images/pattern-background-desktop.svg") no-repeat center center fixed; 
     background-position: center;
+    background-color: var(--Pale-blue);
+    background-position: top;
 }
 
 .attribution {
@@ -39,9 +37,8 @@ body {
   }
 
 .container {
-    border: 2px solid blue;
-    height: 600px;
-    width: 500px;
+    height: 570px;
+    width: 330px;
     margin: 70px 0;
     border-radius: 10px;
     display: flex;
@@ -74,12 +71,18 @@ body {
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    padding: 10px;
+    padding:10px 0;
 }
 
- .order div {
-    padding-left: 40px;
+ .img  {
+     display: block;
+     margin-right: 10px;
 }
+
+/* .order img {
+    padding-right: 15px;
+} */
+
 .order a {
     position: absolute;
     right: 10px;
@@ -125,9 +128,10 @@ body {
     color: black;
 }
 
-@media (min-width: 470px){
+/* @media (min-width: 768px){
     .container {
-        height: 600px;
-        width: 400px;
+        width: 515px;
+        height: 807px;
+        margin-top: 107px 73px;
     }
-}
+} */
